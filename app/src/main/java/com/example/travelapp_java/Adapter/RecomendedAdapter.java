@@ -1,5 +1,6 @@
 package com.example.travelapp_java.Adapter;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -34,7 +35,7 @@ public class RecomendedAdapter extends RecyclerView.Adapter<RecomendedAdapter.Vi
     }
 
     @Override
-    public void onBindViewHolder(@NonNull RecomendedAdapter.Viewholder holder, int position) {
+    public void onBindViewHolder(@NonNull RecomendedAdapter.Viewholder holder, @SuppressLint("RecyclerView") int position) {
         binding.titleTxt.setText(items.get(position).getTitle());
         binding.priceTxt.setText("$"+items.get(position).getPrice());
         binding.addressTxt.setText(items.get(position).getAddress());

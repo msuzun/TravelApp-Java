@@ -220,7 +220,7 @@
                         android:padding="12dp">
 
                         <com.google.android.material.imageview.ShapeableImageView
-                            android:id="@+id/imageView10"
+                            android:id="@+id/profile"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
                             app:layout_constraintBottom_toBottomOf="parent"
@@ -235,20 +235,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="24dp"
                             android:text="Tour Guide"
-                            app:layout_constraintStart_toEndOf="@+id/imageView10"
-                            app:layout_constraintTop_toTopOf="@+id/imageView10" />
-
-                        <TextView
-                            android:id="@+id/textView28"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:text="name"
-                            android:textColor="@color/darkBlue"
-
-                            app:layout_constraintBottom_toBottomOf="@+id/imageView10"
-                            app:layout_constraintStart_toStartOf="@+id/textView27"
-                            app:layout_constraintTop_toBottomOf="@+id/textView27" />
+                            app:layout_constraintStart_toEndOf="@+id/profile"
+                            app:layout_constraintTop_toTopOf="@+id/profile" />
 
                         <ImageView
                             android:id="@+id/callBtn"
@@ -269,6 +257,16 @@
                             app:layout_constraintEnd_toStartOf="@+id/callBtn"
                             app:layout_constraintTop_toTopOf="parent"
                             app:srcCompat="@drawable/message" />
+
+                        <TextView
+                            android:id="@+id/TourGuideNameTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="name"
+                            app:layout_constraintEnd_toEndOf="@+id/textView27"
+                            app:layout_constraintStart_toStartOf="@+id/textView27"
+                            app:layout_constraintTop_toBottomOf="@+id/textView27" />
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
